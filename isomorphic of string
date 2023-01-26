@@ -1,0 +1,16 @@
+def isomorphic(s,t):
+    dict_s={}
+    dict_t={}
+    for i,value in enumerate(s):
+        dict_s[value]=dict_s.get(value,())+[i]
+        for j,value in enumerate(t):
+            dict_t[value]=dict_t.get(value,())+[j]
+            if sorted(dict_s.value())==sorted(dict_t.values()):
+                return true
+            else:
+                return false
+            print(isomorphic("egg","add"));
+            print(isomorphic("foo","bar"));
+            print(isomorphic("fry","sky"));
+            print(isomorphic("paper","title"));
+            print(isomorphic("apples","apple"));
